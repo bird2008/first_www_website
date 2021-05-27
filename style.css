@@ -186,7 +186,7 @@ ol > li:hover > a
     margin: 10px;
     width: 420px;
     height: 82px;
-    background-color: #485b3b;
+    background-color: #d5572b;
     text-align: center;
     padding: 30px;
     font-size: 26px;
@@ -195,7 +195,7 @@ ol > li:hover > a
 
 .tile4:hover
 {
-   background-color: #374a2a; 
+   background-color: #c4461a; 
 }
 
 .tile5
