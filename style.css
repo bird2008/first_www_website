@@ -1,6 +1,6 @@
 body 
 {
-    background-color: wheat;
+    background-image: url("img/plazatlo.png");
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     margin: 0px;
@@ -20,6 +20,7 @@ ol
     width: 1056px;
     font-family: 'Odibee Sans', cursive;
     font-size: 25px;
+    border-radius: 7px;
 }
 
 ol a 
@@ -28,6 +29,7 @@ ol a
     color:#000;
     text-decoration:none;
     padding:0 5px;
+    border-radius: 7px;
 }
 
 ol > li 
@@ -36,16 +38,19 @@ ol > li
     background-color:#00fd94;
     width: 350px;
     border:1px solid rgb(0, 204, 255);
+    border-radius: 7px;
 }
 
 ol > li > a:hover 
 {
     color:#09C;
+    border-radius: 7px;
   }
   
 ol > li:hover 
 {
     background-color:#EEE;
+    border-radius: 7px;
 }
 
 ol > li > ul 
@@ -54,41 +59,49 @@ ol > li > ul
     padding:0;
     margin:0;
     display:none;
+    border-radius: 7px;
 }
   
 ol > li:first-child 
 {
     margin-left:0;
+    border-radius: 7px;
 }
 
 ol > li > ul > li > a 
 {
     border-top:1px solid rgb(0, 204, 255);
+    border-radius: 7px;
 }
   
 ol > li > ul > li 
 {
     background-color:#EEE;
+    border-radius: 7px;
 }
   
 ol > li > ul > li:hover 
 {
     background-color:#DDD;
+    border-radius: 7px;
 }
   
 ol > li > ul > li:hover a 
 {
     color:#09C;
+    border-radius: 7px;
 }
 
 ol > li:hover > ul 
 {
     display:block;
+    border-radius: 7px;
 }
   
 ol > li:hover > a 
 {
     color:#09C;
+    border-radius: 7px;
 }
 
 #container
@@ -146,6 +159,7 @@ ol > li:hover > a
     background-color: #3095d3;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .tile1:hover
@@ -161,6 +175,7 @@ ol > li:hover > a
     background-color: #666666;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .tile2:hover
@@ -176,6 +191,7 @@ ol > li:hover > a
     background-color: #93c748;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .tile3:hover
@@ -194,6 +210,7 @@ ol > li:hover > a
     font-size: 26px;
     line-height: 150%;
     color: seashell;
+    border-radius: 7px;
 }
 
 .tile5
@@ -206,6 +223,7 @@ ol > li:hover > a
     padding: 30px;
     text-align: justify;
     color: mintcream;
+    border-radius: 7px;
 }
 
 .yt
@@ -216,6 +234,7 @@ ol > li:hover > a
     background-color: #d94348;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .yt:hover
@@ -231,6 +250,7 @@ ol > li:hover > a
     background-color: #4668b3;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .fb:hover
@@ -250,6 +270,7 @@ ol > li:hover > a
     margin: 10px;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .ig:hover
@@ -269,6 +290,7 @@ ol > li:hover > a
     background-color: #3095d3;
     float: left;
     text-align: center;
+    border-radius: 7px;
 }
 
 .tw:hover
