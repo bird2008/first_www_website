@@ -2,8 +2,8 @@ function all() {
 
 'use strict';
 var PAPER = 'papier';
-var ROCK = 'kamien';
-var SCISSORS = 'nozyce';
+var ROCK = 'kamień';
+var SCISSORS = 'nożyce';
 
  
 

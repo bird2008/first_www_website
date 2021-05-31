@@ -35,7 +35,7 @@ ol a
 ol > li 
 {
     float:left;
-    background-color:#00fd94;
+    background-color:#46df09;
     width: 350px;
     border:1px solid rgb(0, 204, 255);
     border-radius: 7px;
@@ -156,7 +156,7 @@ ol > li:hover > a
     margin: 10px;
     width: 230px;
     height: 142px;
-    background-color: #3095d3;
+    background-color: #3195d3;
     float: left;
     text-align: center;
     border-radius: 7px;
@@ -165,6 +165,22 @@ ol > li:hover > a
 .tile1:hover
 {
    background-color: #2084c2; 
+}
+
+.tile12
+{
+    margin: 10px;
+    width: 230px;
+    height: 142px;
+    background-color: #ecf01a;
+    float: left;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.tile12:hover
+{
+    background-color: #dbe00a;
 }
 
 .tile2
@@ -211,6 +227,7 @@ ol > li:hover > a
     line-height: 150%;
     color: seashell;
     border-radius: 7px;
+    border:1px solid rgb(0, 204, 255)
 }
 
 .tile5
@@ -224,6 +241,7 @@ ol > li:hover > a
     text-align: justify;
     color: mintcream;
     border-radius: 7px;
+    border:1px solid rgb(0, 204, 255)
 }
 
 .yt

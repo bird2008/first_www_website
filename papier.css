@@ -1,5 +1,10 @@
-
 body
+{
+  background-image: url("img/tlo.png");
+}
+
+
+#bodys
 {
   width: 1300px;
   height: 700px;
@@ -24,6 +29,7 @@ body
 
 button
 {
+  margin-top: 100px;
   padding: 11px 50px;
   max-width: 100%;
   width: 300px;
@@ -36,6 +42,7 @@ button
     border: 2px solid #02ac46;
   border-radius: 7px;
   cursor: pointer;
+  font-family: 'Odibee Sans', cursive;
 }
 
 button:hover
@@ -48,6 +55,14 @@ button:hover
   text-align: center;
   padding: 20px 0;
   border-radius: 7px;
+  font-family: 'Odibee Sans', cursive;
+}
+
+h3
+{
+  font-family: 'Odibee Sans', cursive;
+  margin-top: 175px;
+  margin-bottom: 20px;
 }
 
 #result
@@ -60,6 +75,12 @@ button:hover
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 7px;
+  font-family: 'Odibee Sans', cursive;
+  text-shadow: 
+  2px 2px 0 #33402a,
+  -2px 2px 0 #33402a,
+  -2px -2px 0 #33402a,
+  2px -2px 0 #33402a;
 } 
 
 .new-game-layer-style
