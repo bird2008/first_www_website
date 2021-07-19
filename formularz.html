@@ -6,7 +6,7 @@
 	<title>Katalog samochodowy</title>
 	<meta name="description" content="Stwórz wymarzony model swojego samochodu!">
 	<meta name="keywords" content="samochód, katalog, salon, nowe auto">
-	<meta name="author" content="Jan Nowak">
+	
 	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
 	
@@ -28,7 +28,7 @@
 	
 		<article>
 		
-			<form action="" method="post" enctype="application/x-www-form-urlencoded">
+			<form action="" method="post" enctype="multipart/form-data">
 
 				<div class="row">
 
@@ -107,6 +107,10 @@
 				</div>
 
 				<div class="row">
+					<label> Ile kluczyków <input type="number" step="1"></label>
+				</div>
+
+				<div class="row">
 
 					<label> Imię <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
 					<label> Hasło <input type="password" name="haslo"></label>
@@ -115,8 +119,42 @@
 				</div>
 
 				<div class="row">
-					<label> Ile kluczyków <input type="number" step="1"></label>
+					<label> Adres e-mail <input type="email" required></label>
+					<label> Numer telefonu <input type="tel" required></label>
 				</div>
+
+				<div class="row">
+					<label> Data dostawy <input type="date"></label>
+					<label> Preferowany czas dostawy <input type="time" min="09:00" max="18:00"></label>
+				</div>
+
+				<div class="row">
+					<div><label for="komentarz"> Uwagi do zamówienia </label></div>
+					<textarea id="komentarz" rows="4" cols="80" maxlength="100" minlength="10"></textarea>
+				</div>
+
+				<div class="row">
+					<label> Prześlij zdjęcie twojego wymarzonego samochodu </label> <input type="file" accept="image/x-png,image/gif,image/jpeg">
+					
+				</div>
+
+				<div class="row">
+					<label> Kolor lakieru <input type="color" value="#ff0000"></label>
+				</div>
+
+				<div class="row">
+					<label> Stopień realizacji zamówienia </label> <progress id="pasek" max="100" value="25"></progress>
+				</div>
+
+				<div class="row">
+					<label> Stopień zatankowania samochodu </label><meter min="0" max="100" title="procent" value="40" low="30" high="70" optimum="75"></meter>
+				</div>
+
+				<div class="row">
+					<label> Twoja strona www </label><input id="www" type="url" placeholder='Przed adresem dodaj "http://"'>
+				</div>
+
+				<input type="hidden" value="dodatkowy_mechanizm_bezpieczeństwa">
 
 				<div class="row">
 					<input type="submit" value="Zamawiam!">
