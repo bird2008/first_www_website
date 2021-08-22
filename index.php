@@ -1,3 +1,9 @@
+<?php
+
+$pageName = $_GET['action'] ?? null;
+
+?>
+
 <!DOCTYPE html>
 <html lang="pl">
     <head>
@@ -23,9 +29,10 @@
         <ol>
           <li><a href="#">Informacje</a>
             <ul>
-              <li><a href="oferta.html">Oferta</a></li>
-              <li><a href="cv.html">Cv</a></li>
-              <li><a href="kontakt.html">Kontakt</a></li>
+              <li><a href="?action=oferta">Oferta</a></li>
+              <li><a href="?action=cv">Cv</a></li>
+              <li><a href="?action=kontakt">Kontakt</a></li>
+              <li><a href="?action=kim-jestem">Kim jestem?</a></li>
             </ul>
           </li>
       
@@ -49,7 +56,7 @@
         <div id="container">
 
           <div class="rectangle">
-              <a href="index.html" class="tilelink" >
+              <a href="" class="tilelink" >
                   <div id="logo">Bartosz Orzechowski</div>
               </a>
               <div id="zegar"></div>
@@ -57,23 +64,23 @@
           </div>
 
           <div class="square">
-              <a href="kimjestem.html" class="tilelink" >
+              <a href="?action=kim-jestem" class="tilelink" >
                   <div class="tile1">
                   <i class="icon-user"></i><br />Kim Jestem?
               </div>
               </a>
-              <a href="oferta.html" class="tilelink" >
+              <a href="?action=oferta" class="tilelink" >
               <div class="tile12">
                   <i class="icon-laptop"></i><br />Oferta
               </div>
               </a>
               <div style="clear: both;"></div>
-              <a href="cv.html" class="tilelink" >
+              <a href="?action=cv" class="tilelink" >
               <div class="tile2">
                   <i class="icon-graduation-cap"></i><br />Curriculum vitae
               </div>
               </a>
-              <a href="kontakt.html" class="tilelink" >
+              <a href="?action=kontakt" class="tilelink" >
               <div class="tile3">
                   <i class="icon-mail"></i><br />Kontakt ze mną
               </div>
@@ -85,7 +92,17 @@
           </div>
           <div class="square">
               <div class="tile5">
-                Strona główna<br /> <br />To moja pierwsza strona</i> 
+                <?php if ($pageName === 'cv'): ?>
+                Cv<br /> <br />Umiem zaprogramować bota w Discord.js oraz stworzyć stronę.
+                <?php elseif ($pageName === 'kim-jestem'): ?>
+                Kim jestem?<br /> <br />Jestem Bartoszem. Uczę sie programować😀
+                <?php elseif ($pageName === 'kontakt'): ?>
+                Kontakt<br /> <br />Aby się ze mną skontaktować napisz maila pod adres: <i>orzechowski.blog@gmail.com</i> 
+                <?php elseif ($pageName === 'oferta'): ?>
+                Co zaoferuję?<br /> <br />Stworzę bota oraz stronę www.
+                <?php else: ?>
+                Strona główna<br /> <br />To moja pierwsza strona
+                <?php endif; ?>
               </div>
               <a href="https://www.youtube.com/channel/UCKkdhkgC7cJcLzosQZ2vLdw" target="_blank" class="tilelink" >
                   <div class="yt">

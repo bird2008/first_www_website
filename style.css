@@ -60,6 +60,8 @@ ol > li > ul
     margin:0;
     display:none;
     border-radius: 7px;
+    position: absolute;
+    width: 352px;
 }
   
 ol > li:first-child 
