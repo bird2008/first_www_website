@@ -1,6 +1,7 @@
 body 
 {
-    background-image: url("img/plazatlo.png");
+    background: linear-gradient(45deg, #0b3b4e 0%, #05525c 25%, #0b7e52 50%, #17b399 75%, #0fe4d2 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e08322', endColorstr='#ab0777',GradientType=1 );
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     margin: 0px;
@@ -17,16 +18,17 @@ ol
     font-size:18px;
     line-height:2em;
     text-align:center;
-    width: 1056px;
+    width: 980px;
     font-family: 'Odibee Sans', cursive;
     font-size: 25px;
     border-radius: 7px;
+    
 }
 
 ol a 
 {
     display:block;
-    color:#000;
+    color:rgb(0, 0, 0);
     text-decoration:none;
     padding:0 5px;
     border-radius: 7px;
@@ -35,8 +37,8 @@ ol a
 ol > li 
 {
     float:left;
-    background-color:#46df09;
-    width: 350px;
+    background: linear-gradient(45deg, #4aff1d 0%, #0eb90e 25%, #38a008 50%, #0eb90e 75%, #4aff1d 100%);
+    width: 324px;
     border:1px solid rgb(0, 204, 255);
     border-radius: 7px;
 }
@@ -61,7 +63,7 @@ ol > li > ul
     display:none;
     border-radius: 7px;
     position: absolute;
-    width: 352px;
+    width: 324px;
 }
   
 ol > li:first-child 
@@ -102,7 +104,7 @@ ol > li:hover > ul
   
 ol > li:hover > a 
 {
-    color:#09C;
+    color:rgb(2, 255, 242);
     border-radius: 7px;
 }
 
@@ -117,7 +119,7 @@ ol > li:hover > a
 {
     width: 960px;
     margin: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     text-align: center;
 }
 .square
@@ -132,9 +134,16 @@ ol > li:hover > a
     font-family: 'Josefin Sans', sans-serif;
     font-size: 70px;
     width: 680px;
+    color:#EEE;
     margin-top: 40px;
     margin-bottom: 0px;
     text-align: left;
+    transition: color 0.5s;
+}
+
+#logo:hover
+{
+    color: rgb(228, 82, 82);
 }
 
 #zegar
@@ -151,6 +160,13 @@ ol > li:hover > a
 	-2px 2px 0 #ffffff,
 	-2px -2px 0 #ffffff,
 	2px -2px 0 #ffffff;
+    transition: color 0.5s;
+    cursor: context-menu;
+}
+
+#zegar:hover
+{
+    color: rgb(0, 0, 0);
 }
 
 .tile1
@@ -162,6 +178,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .tile1:hover
@@ -178,6 +195,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .tile12:hover
@@ -194,6 +212,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .tile2:hover
@@ -210,6 +229,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .tile3:hover
@@ -229,7 +249,13 @@ ol > li:hover > a
     line-height: 150%;
     color: seashell;
     border-radius: 7px;
-    border:1px solid rgb(0, 204, 255)
+    border: 1px solid rgb(0, 204, 255);
+    transition: color 0.5s;
+}
+
+.tile4:hover
+{
+    color: #000000;
 }
 
 .tile5
@@ -243,7 +269,13 @@ ol > li:hover > a
     text-align: justify;
     color: mintcream;
     border-radius: 7px;
-    border:1px solid rgb(0, 204, 255)
+    border:1px solid rgb(0, 204, 255);
+    transition: color 0.5s;
+}
+
+.tile5:hover
+{
+    color: #00f7ff;
 }
 
 .yt
@@ -255,6 +287,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .yt:hover
@@ -271,6 +304,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .fb:hover
@@ -291,10 +325,12 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: color 0.5s;
 }
 
 .ig:hover
 {
+   color: rgb(7, 112, 182);
    background-color: #e08322; 
    background: -moz-linear-gradient(45deg, #e08322 0%, #d5572b 25%, #cb1632 50%, #bb1255 75%, #ab0777 100%); 
    background: -webkit-linear-gradient(45deg, #e08322 0%,#d5572b 25%,#cb1632 50%,#bb1255 75%,#ab0777 100%); 
@@ -311,6 +347,7 @@ ol > li:hover > a
     float: left;
     text-align: center;
     border-radius: 7px;
+    transition: background-color 0.3s;
 }
 
 .tw:hover
@@ -326,17 +363,20 @@ a.tilelink
 
 .rectangle1
 {
-    width: 100%;
+    width: 960px;
     height: 30px;
-    background-color: rgb(0, 204, 255);
-    margin: 0px;
-    text-align: center;
+    background: linear-gradient(45deg, #0fe4d2 0%, #166c77 25%, #20c3c9 50%, #17b399 75%, #1487b4 100% );
+    margin: auto;
     border: 1px groove #91b17a;
     bottom: 0;
-    position: fixed;
+    display: flex;
     font-size: 20px;
-    padding: 10px 0px 0px 0px;
+    padding: 10px;
     text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 5px;
 }
 
 
