@@ -56,7 +56,7 @@ $pageName = $_GET['action'] ?? null;
         <div id="container">
 
           <div class="rectangle">
-              <a href="" class="tilelink" >
+              <a href="index.php" class="tilelink" >
                   <div id="logo">Bartosz Orzechowski</div>
               </a>
               <div id="zegar"></div>
