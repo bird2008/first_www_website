@@ -15,25 +15,25 @@
 <body onload="all();">
   <div id="bodys">
     <div id="newGame_layer" class="new-game-layer-style">
-      <h3>Podaj imię gracza:</h3>
-      <input type="text" name="player_name" placeholder="Wpisz swoje imię">
+      <div class='passname'>Podaj imię gracza:</div>
+      <input class="inp" type="text" name="player_name" placeholder="Wpisz swoje imię">
       <button>Potwierdź</button>
     </div>
     <div id="game" style="display: none;">
       <div class="buttons-container">
         <div class="button-container">
-          <button id="new-game" style="display: none;">Nowa gra</button>
+          <button class="inp" id="new-game" style="display: none;">Nowa gra</button>
         </div>
       </div>
-      <div class="buttons-container dismiss">
+      <div style="margin-left: auto; margin-right: auto;"class="buttons-container dismiss">
         <div class="button-container">
-          <button id="papier">Papier</button>
+          <button class="inp" id="papier">Papier</button>
         </div>
         <div class="button-container">
-          <button id="kamień">Kamień</button>
+          <button class="inp" id="kamień">Kamień</button>
         </div>
         <div class="button-container">
-          <button id="nożyce">Nożyce</button>
+          <button class="inp" id="nożyce">Nożyce</button>
         </div>
       </div>
       <div id="output"></div>

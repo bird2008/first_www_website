@@ -126,8 +126,6 @@ $pageName = $_GET['action'] ?? null;
               </a>
               <div style="clear: both;"></div>
           </div>
-              
-          <div style="clear: both;"></div>
 
           <div class="rectangle1">2021 &copy; Bartosz Orzechowski - moja pierwsza strona! <i class="icon-mail-alt"></i> orzechowski.blog@gmail.com</div>
         

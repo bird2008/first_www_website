@@ -1,41 +1,58 @@
 body
 {
   background-image: url("img/tlo.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 #bodys
 {
-  width: 1300px;
-  height: 700px;
+  width: 80%;
+  height: 80%;
   margin: auto;
   background-image: url("img/plazatlo.png");
   border: 5px solid #03973e;
   border-radius: 7px;
   font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons-container
 {
-  width: 1300px;
+  width: 80%;
   max-width: 100%;
-  margin:  auto;
-  margin-top: 50px;
+  margin-top: 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 7px;
+  margin-left: auto;
+  margin-right: auto;
 } 
+
+.passname
+{
+  font-size: larger;
+}
+
+.inp
+{
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 button
 {
-  margin-top: 100px;
-  padding: 11px 50px;
   max-width: 100%;
-  width: 300px;
-  font-size: 36px;
-  font-weight: 600;
-  text-align: center;
+  width:80px;
+  height: 30px;
   white-space: nowrap;
     color: #fff;
   background-color: #02ac46;
@@ -47,13 +64,13 @@ button
 
 button:hover
 {
-    background-color: #03973e
+  background-color: #03973e
 }
 
 #output
 {
   text-align: center;
-  padding: 20px 0;
+  padding: 5px 0;
   border-radius: 7px;
   font-family: 'Odibee Sans', cursive;
 }
@@ -63,6 +80,14 @@ h3
   font-family: 'Odibee Sans', cursive;
   margin-top: 175px;
   margin-bottom: 20px;
+}
+
+#game
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 input
@@ -77,7 +102,7 @@ input
 #result
 {
   padding: 20px 0;
-  width: 1300px;
+  width: 80%;
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -86,16 +111,17 @@ input
   border-radius: 7px;
   font-family: 'Odibee Sans', cursive;
   text-shadow: 
-  2px 2px 0 #33402a,
+  2px 2px 0 #6f8f59,
   -2px 2px 0 #33402a,
   -2px -2px 0 #33402a,
   2px -2px 0 #33402a;
 } 
 
+
 .new-game-layer-style
 {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 0px;
   border-radius: 7px;
 }
 

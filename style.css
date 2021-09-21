@@ -22,6 +22,7 @@ ol
     font-size: 25px;
     border-radius: 7px;
     margin-top: -25px;
+    transition: color 0.5s;
     
 }
 
@@ -32,6 +33,7 @@ ol a
     text-decoration:none;
     padding:0 5px;
     border-radius: 7px;
+    transition: color 0.5s;
 }
 
 ol > li 
@@ -41,13 +43,15 @@ ol > li
     width: 324px;
     border:1px solid rgb(0, 204, 255);
     border-radius: 7px;
+    position:relative;
+    transition: color 0.5s;
 }
 
 ol > li > a:hover 
 {
     color:#09C;
     border-radius: 7px;
-  }
+}
   
 ol > li:hover 
 {
@@ -60,10 +64,14 @@ ol > li > ul
     list-style-type:none;
     padding:0;
     margin:0;
-    display:none;
     border-radius: 7px;
     position: absolute;
     width: 324px;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: 250ms;
+    visibility:hidden;
+    z-index:1;
 }
   
 ol > li:first-child 
@@ -74,6 +82,7 @@ ol > li:first-child
 
 ol > li > ul > li > a 
 {
+    display:block;
     border-top:1px solid rgb(0, 204, 255);
     border-radius: 7px;
 }
@@ -98,8 +107,9 @@ ol > li > ul > li:hover a
 
 ol > li:hover > ul 
 {
-    display:block;
     border-radius: 7px;
+    visibility:visible;
+    transform:scaleY(1);
 }
   
 ol > li:hover > a 
@@ -367,7 +377,6 @@ a.tilelink
     height: 30px;
     background: linear-gradient(45deg, #0fe4d2 0%, #166c77 25%, #20c3c9 50%, #17b399 75%, #1487b4 100% );
     border: 1px groove #91b17a;
-    bottom: 0;
     display: flex;
     font-size: 20px;
     padding: 10px;
@@ -375,9 +384,10 @@ a.tilelink
     justify-content: center;
     align-items: center;
     border-radius: 10px 10px 0 0;
-    position: absolute;
+    margin-left: 10px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
 }
-
-
 
 
