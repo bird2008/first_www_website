@@ -1,0 +1,13 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule portfolio index.php
+RewriteRule kim-jestem ?action=kim-jestem
+RewriteRule oferta ?action=oferta
+RewriteRule cv ?action=cv
+RewriteRule kontakt-programista ?action=kontakt
+RewriteRule monitory-prezentacja monitory.html

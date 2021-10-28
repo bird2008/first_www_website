@@ -1,0 +1,108 @@
+body
+{
+  background-image: url("img/tlo.png");
+}
+
+
+#bodys
+{
+  width: 1300px;
+  height: 700px;
+  margin: auto;
+  background-image: url("img/plazatlo.png");
+  border: 5px solid #03973e;
+  border-radius: 7px;
+  font-size: 36px;
+}
+
+.buttons-container
+{
+  width: 1300px;
+  max-width: 100%;
+  margin:  auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 7px;
+} 
+
+button
+{
+  margin-top: 100px;
+  padding: 11px 50px;
+  max-width: 100%;
+  width: 300px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+    color: #fff;
+  background-color: #02ac46;
+    border: 2px solid #02ac46;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Odibee Sans', cursive;
+}
+
+button:hover
+{
+    background-color: #03973e
+}
+
+#output
+{
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 7px;
+  font-family: 'Odibee Sans', cursive;
+}
+
+h3
+{
+  font-family: 'Odibee Sans', cursive;
+  margin-top: 175px;
+  margin-bottom: 20px;
+}
+
+input
+{
+  border-radius: 7px;
+  border: 2px solid #02ac46;
+  font-family: 'Odibee Sans', cursive;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#result
+{
+  padding: 20px 0;
+  width: 1300px;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 7px;
+  font-family: 'Odibee Sans', cursive;
+  text-shadow: 
+  2px 2px 0 #33402a,
+  -2px 2px 0 #33402a,
+  -2px -2px 0 #33402a,
+  2px -2px 0 #33402a;
+} 
+
+.new-game-layer-style
+{
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 7px;
+}
+
+.new-game-layer-style button
+{
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 7px;
+}

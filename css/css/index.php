@@ -26,37 +26,35 @@ $pageName = $_GET['action'] ?? null;
     </head>
 
     <body onload="odliczanie();">
-        <div class="bg">
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
+        <ol>
+          <li><a href="#">Informacje</a>
+            <ul>
+              <li><a href="?action=oferta">Oferta</a></li>
+              <li><a href="?action=cv">Cv</a></li>
+              <li><a href="?action=kontakt">Kontakt</a></li>
+              <li><a href="?action=kim-jestem">Kim jestem?</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="#">Rozrywka</a>
+            <ul>
+              <li><a href="papier.html" target="_blank" >Papier, kamień, nożyce</a></li>
+              <li><a href="https://www.filmweb.pl/ranking/film" target="_blank" >Filmy</a></li>
+              <li><a href="https://www.empik.com/bestsellery/ksiazki" target="_blank" >Książki</a></li>
+              <li><a href="https://www.google.com/search?q=%C5%9Bmieszne+zdj%C4%99cia&safe=active&sxsrf=ALeKk00WpuE-vLBIvr2av0oLVJireJbZBA:1622102850101&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix-6yBtOnwAhUfCRAIHf9XDHgQ_AUoAXoECAEQAw&biw=1745&bih=861" target="_blank" >Zdjęcia</a></li>
+              <li><a href="formularz.html" target="_blank">Przykładowy formularz</a></li>
+            </ul>
+          </li>
+      
+          <li><a href="#">Edukacja</a>
+            <ul>
+              <li><a href="monitory.html" target="_blank" >Monitory</a></li>
+            </ul>
+          </li>
+        </ol>
+
         <div id="container">
-          <ol>
-            <li><a href="#">Informacje</a>
-              <ul>
-                <li><a href="?action=oferta">Oferta</a></li>
-                <li><a href="?action=cv">Cv</a></li>
-                <li><a href="?action=kontakt">Kontakt</a></li>
-                <li><a href="?action=kim-jestem">Kim jestem?</a></li>
-              </ul>
-            </li>
-        
-            <li><a href="#">Rozrywka</a>
-              <ul>
-                <li><a href="papier.html" target="_blank" >Papier, kamień, nożyce</a></li>
-                <li><a href="https://www.filmweb.pl/ranking/film" target="_blank" >Filmy</a></li>
-                <li><a href="https://www.empik.com/bestsellery/ksiazki" target="_blank" >Książki</a></li>
-                <li><a href="https://www.google.com/search?q=%C5%9Bmieszne+zdj%C4%99cia&safe=active&sxsrf=ALeKk00WpuE-vLBIvr2av0oLVJireJbZBA:1622102850101&source=lnms&tbm=isch&sa=X&ved=2ahUKEwix-6yBtOnwAhUfCRAIHf9XDHgQ_AUoAXoECAEQAw&biw=1745&bih=861" target="_blank" >Zdjęcia</a></li>
-                <li><a href="formularz.html" target="_blank">Przykładowy formularz</a></li>
-              </ul>
-            </li>
-        
-            <li><a href="#">Edukacja</a>
-              <ul>
-                <li><a href="monitory.html" target="_blank" >Monitory</a></li>
-              </ul>
-            </li>
-          </ol>
+
           <div class="rectangle">
               <a href="index.php" class="tilelink" >
                   <div id="logo">Bartosz Orzechowski</div>
@@ -121,20 +119,21 @@ $pageName = $_GET['action'] ?? null;
                       <i class="icon-instagram"></i>
                   </div>
               </a>
-              <a href="https://github.com/bird2008" target="_blank" class="tilelink" >
-                  <div class="git">
-                      <img src="img/github.png">
-                      <div class="gh">Github</div>
+              <a href="https://twitter.com/BartoszOrzecho6" target="_blank" class="tilelink" >
+                  <div class="tw">
+                      <i class="icon-twitter"></i>
                   </div>
               </a>
               <div style="clear: both;"></div>
           </div>
+              
+          <div style="clear: both;"></div>
 
           <div class="rectangle1">2021 &copy; Bartosz Orzechowski - moja pierwsza strona! <i class="icon-mail-alt"></i> orzechowski.blog@gmail.com</div>
         
-        </div>    
+        </div>          
         
-      
+        
       
     </body>
 

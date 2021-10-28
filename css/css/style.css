@@ -4,7 +4,6 @@ body
     margin: 0px;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    overflow: hidden;
 }
 
 
@@ -22,9 +21,7 @@ ol
     font-family: 'Odibee Sans', cursive;
     font-size: 25px;
     border-radius: 7px;
-    margin-top: 0px;
-    transition: color 0.5s;
-    padding-top: 5px;
+    margin-top: -25px;
     
 }
 
@@ -35,7 +32,6 @@ ol a
     text-decoration:none;
     padding:0 5px;
     border-radius: 7px;
-    transition: color 0.5s;
 }
 
 ol > li 
@@ -45,15 +41,13 @@ ol > li
     width: 324px;
     border:1px solid rgb(0, 204, 255);
     border-radius: 7px;
-    position:relative;
-    transition: color 0.5s;
 }
 
 ol > li > a:hover 
 {
     color:#09C;
     border-radius: 7px;
-}
+  }
   
 ol > li:hover 
 {
@@ -66,14 +60,10 @@ ol > li > ul
     list-style-type:none;
     padding:0;
     margin:0;
+    display:none;
     border-radius: 7px;
     position: absolute;
     width: 324px;
-    transform: scaleY(0);
-    transform-origin: 50% 0;
-    transition: 250ms;
-    visibility:hidden;
-    z-index:1;
 }
   
 ol > li:first-child 
@@ -84,7 +74,6 @@ ol > li:first-child
 
 ol > li > ul > li > a 
 {
-    display:block;
     border-top:1px solid rgb(0, 204, 255);
     border-radius: 7px;
 }
@@ -109,9 +98,8 @@ ol > li > ul > li:hover a
 
 ol > li:hover > ul 
 {
+    display:block;
     border-radius: 7px;
-    visibility:visible;
-    transform:scaleY(1);
 }
   
 ol > li:hover > a 
@@ -123,17 +111,8 @@ ol > li:hover > a
 #container
 {
     width: 1000px;
-    backdrop-filter: blur(3px);
-    background: linear-gradient(to top right, rgb(18, 85, 161, 0.01), rgb(89, 228, 205, 0.01));
-    border-radius: 9px;
-    margin-top: 50vh;
-    margin-left: 50vw;
-    box-shadow: 0px 8px 24px 0 rgb(0, 0, 0, 0.3);
-    position: absolute;
-    transform: translateY(-50%) translateX(-50%);
-    max-height: 100%;
-    overflow-y: auto;
-    overflow-x: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .rectangle
@@ -155,7 +134,7 @@ ol > li:hover > a
     font-family: 'Josefin Sans', sans-serif;
     font-size: 70px;
     width: 680px;
-    color:rgb(17, 9, 9);
+    color:#EEE;
     margin-top: 40px;
     margin-bottom: 0px;
     text-align: left;
@@ -192,7 +171,7 @@ ol > li:hover > a
 
 .tile1
 {
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     width: 230px;
     height: 142px;
     background-color: #3195d3;
@@ -359,18 +338,19 @@ ol > li:hover > a
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e08322', endColorstr='#ab0777',GradientType=1 );
 }
     
-.git
+.tw
 {
     margin: 10px;
     width: 105px;
     height: 142px;
     background-color: #3095d3;
     float: left;
+    text-align: center;
     border-radius: 7px;
     transition: background-color 0.3s;
 }
 
-.git:hover
+.tw:hover
 {
    background-color: #2084c2; 
 }
@@ -387,79 +367,17 @@ a.tilelink
     height: 30px;
     background: linear-gradient(45deg, #0fe4d2 0%, #166c77 25%, #20c3c9 50%, #17b399 75%, #1487b4 100% );
     border: 1px groove #91b17a;
+    bottom: 0;
     display: flex;
     font-size: 20px;
     padding: 10px;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin: 0 auto 0;
-    clear: both;
-    margin-bottom: 5px;
-}
-
-img{
-    margin-top: 20px;
-    margin-left: 17.5px;
-    height: 70px;
-    width: 70px;
-}
-
-.gh{
-    margin-left: 22px;
-    color: #dddddd;
-    transition: color 0.3s;
-}
-
-.gh:hover{
-    color: #91b17a;
-}
-
-.bg{
-    height: 100%;
-    left: 0;
+    border-radius: 10px 10px 0 0;
     position: absolute;
-    width: 100%;
 }
 
-.dot{
-    background: linear-gradient(to top left, rgba(48, 109, 179, 0.35), rgba(84, 223, 197, 0.35));
-    border-radius: 50%;
-    height: 10vw;
-    width: 10vw;
-}
 
-.dot:nth-child(1){
-    animation: move1 10s linear infinite;
-    height: 50vh;
-    left: 10vw;
-    position: absolute;
-    top: 0;
-    width: 50vh;
-}
 
-.dot:nth-child(2){
-    animation: move2 15s linear infinite;
-    height: 30vh;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    width: 30vh;
-}
 
-@keyframes move1 {
-    from{
-        transform: translateY(-50vh);
-    }to{
-        transform: translateY(100vh);
-    }
-}
-
-@keyframes move2 {
-    from{
-        transform: translateY(50vh);
-    }to{
-        transform: translateY(-80vh);
-    }
-}
