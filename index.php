@@ -116,7 +116,7 @@ $pageName = $_GET['action'] ?? null;
                       <i class="icon-facebook-official"></i>
                   </div>
               </a>
-              <a href="https://www.instagram.com/bat_1369/?hl=pl" target="_blank" class="tilelink" >
+              <a href="https://www.instagram.com/birdobird_/" target="_blank" class="tilelink" >
                   <div class="ig">
                       <i class="icon-instagram"></i>
                   </div>
